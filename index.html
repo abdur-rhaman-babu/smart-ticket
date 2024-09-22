@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="navbar bg-base-100 px-11 py-8">
+    <div class="navbar bg-base-100 md:px-11 md:py-8 px-4 py-4">
         <div class="navbar-start">
-          <a class="btn btn-ghost text-xl">P-Ticket</a>
+          <a class="btn btn-ghost text-2xl font-bold">P-Ticket</a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
@@ -22,17 +22,16 @@
           </ul>
         </div>
         <div class="navbar-end">
-          <a class="btn">Button</a>
-          <img src="" alt="">
+         <button><a class="flex items-center gap-3 bg-lime-100 px-5 py-3 rounded-xl border border-green-500 text-green-700 font-bold" href="#">Bus<img src="/images/bus-icon.png" alt=""></a></button>
         </div>
 
         <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars text-xl"></i>
             </div>
             <ul
               tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-48 -ml-28 h-screen shadow pl-10">
               <li><a>Home</a></li>
               <li><a>About</a></li>
               <li><a>Destination</a></li>
