@@ -7,37 +7,180 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+    .font-rlw {
+    font-family: "Raleway", sans-serif;
+    }
+
+    .font-inter {
+    font-family: "Inter", sans-serif;
+    }
+    </style>
 </head>
 <body>
-    <div class="navbar bg-base-100 md:px-11 md:py-8 px-4 py-4">
-        <div class="navbar-start">
-          <a class="btn btn-ghost text-2xl font-bold">P-Ticket</a>
-        </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li><a>Home</a></li>
-            <li><a>About</a></li>
-            <li><a>Destination</a></li>
-            <li><a>Search</a></li>
-          </ul>
-        </div>
-        <div class="navbar-end">
-         <button><a class="flex items-center gap-3 bg-lime-100 px-5 py-3 rounded-xl border border-green-500 text-green-700 font-bold" href="#">Bus<img src="/images/bus-icon.png" alt=""></a></button>
-        </div>
-
-        <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <i class="fa-solid fa-bars text-xl"></i>
+    <header>
+        <div class="navbar bg-base-100 md:px-11 md:py-8 px-4 py-4">
+            <div class="navbar-start">
+              <a class="btn btn-ghost text-3xl font-bold">P-Ticket</a>
             </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-48 -ml-28 h-screen shadow pl-10">
-              <li><a>Home</a></li>
-              <li><a>About</a></li>
-              <li><a>Destination</a></li>
-              <li><a>Search</a></li>
-            </ul>
-          </div>
-      </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a class="text-xl">Home</a></li>
+                <li><a class="text-xl">About</a></li>
+                <li><a class="text-xl">Destination</a></li>
+                <li><a class="text-xl">Search</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+             <button><a class="flex items-center gap-3 bg-lime-100 px-5 py-3 rounded-xl border border-green-500 text-green-700 font-bold" href="#">Bus<img src="/images/bus-icon.png" alt=""></a></button>
+            </div>
+    
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-48 -ml-28 h-screen shadow pl-10">
+                  <li><a>Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Destination</a></li>
+                  <li><a>Search</a></li>
+                </ul>
+              </div>
+        </div>
+    </header>
+    <main>
+        <!-- banner section start -->
+            <section  class="md:max-w-7xl mx-auto relative text-center bg-[url('/images/banner.png')] bg-no-repeat cover ">
+                    <div class="p-20 text-white">
+                        <h1 class="text-5xl font-bold leading-tight">End-to-End Travel with<span class="text-green-400"> <br> P Paribahan</span></h1>
+                        <p class="mt-4 w-1/2 mx-auto my-10">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined.</p>
+                        <button class="bg-green-500 mt-5 px-6 py-4 rounded-lg text-black mb-60"><a class="text-xl font-bold" href="#">Buy Tickets</a></button>
+                    </div>
+                    <div class="flex items-center justify-center gap-10 absolute bottom-32 left-44">
+                        <div class="flex items-center gap-2 text-left shadow-md shadow-green-700 bg-white px-5 py-6 rounded-xl">
+                            <img src="./images/people.png" alt="">
+                            <div>
+                              <p class="font-bold text-2xl">500k</p>
+                              <p>Registered users</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-left shadow-md shadow-green-700 bg-white px-5 py-6 rounded-xl">
+                            <img src="./images/ticket-cupon.png" alt="">
+                            <div>
+                              <p class="font-bold text-2xl">1.7 lacks</p>
+                              <p>Tickets sold</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-left shadow-md shadow-green-700 bg-white px-5 py-6 rounded-xl">
+                            <img src="./images/stoppage.png" alt="">
+                            <div>
+                              <p class="font-bold text-2xl">80k+</p>
+                              <p>Rental partners</p>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        
+            <!-- offer section -->
+             <section class="mb-10">
+              <h1 class="font-bold text-4xl text-center mb-8">Best Offers for you</h1>
+                <div class="flex items-center justify-center gap-6">
+                    <div class="flex items-center bg-yellow-400 rounded-xl gap-5 px-16">
+                        <div class="space-y-3">
+                            <h3 class="font-bold text-2xl">15% OFF</h3>
+                            <p class="font-semibold">on your next purchase</p>
+                            <p>use by January 2024</p>
+                        </div>
+                        <div>
+                            <img src="./images/cupon-devider.png" alt="">
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-2xl">NEW15</h3>
+                            <p>cupon code</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center bg-pink-400 rounded-xl gap-5 px-16">
+                        <div class="space-y-3">
+                            <h3 class="font-bold text-2xl">20% OFF</h3>
+                            <p class="font-semibold">on your next purchase</p>
+                            <p>use by January 2024</p>
+                        </div>
+                        <div>
+                            <img src="./images/cupon-devider.png" alt="">
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-3xl">Couple 20</h3>
+                            <p>cupon code</p>
+                        </div>
+                    </div>
+                </div>
+               <div class="text-center mt-10">
+                <button class="border border-green-600 rounded-xl px-6 py-4 text-green-500 font-bold">See All Offers</button>
+               </div>
+             </section>
+
+             <!-- paribhan section -->
+              <section class="bg-[#F7F8F8] p-20">
+                    <div class="text-center">
+                      <h1 class="font-bold text-4xl mb-5">P.H Paribahan</h1>
+                      <p class="mb-10 text-slate-400">Yes, you can run unit tests and view the results directly within the <br>app. The integrated testing features allow for a streamlined .</p>
+                    </div>
+
+                    
+                        <div class="md: max-w-6xl md: mx-auto flex items-center justify-between bg-white px-16 rounded-xl">
+                            <div>
+                              <div class="flex items-center justify-between gap-24">
+                                <div>
+                                  <div class="flex items-center gap-4">
+                                    <img src="./images/bus-logo.png" alt="">
+                                    <div>
+                                      <h3 class="font-bold text-2xl mb-4">Greenline Paribahan</h3>
+                                      <p>Coach-009-WEB ! AC_Business</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="flex items-center gap-4 border border-green-500 bg-green-100 py-4 px-6 rounded-xl cursor-pointer">
+                                    <img src="./images/seat-green.png" alt="">
+                                    <p>40 seat left</p>
+                                </div>
+                              </div>
+                            <div class="bg-[#F7F8F8] mt-5 rounded-xl p-10">
+                              <div class="flex items-center justify-between px-5 py-5 border-b-2 border-gray-400 border-dotted">
+                                <p>Route</p>
+                                <p>Dhaka-Slyhet</p>
+                              </div>
+                              <div class="flex items-center justify-between px-5 py-5 border-b-2 border-gray-400 border-dotted">
+                                <p>Depature Time</p>
+                                <p>9.00 PM</p>
+                              </div>
+                              <div class="flex items-center justify-center gap-5 mt-5">
+                                  <p class="bg-slate-200 px-4 py-3 rounded-lg">Boarding Point - Laxmipur</p>
+                                  <p class="bg-slate-200 px-4 py-3 rounded-lg">Dropping Point - Bogura</p>
+                                  <p class="bg-slate-200 px-4 py-3 rounded-lg">Est. Time - 11 Hour</p>
+                              </div>
+                            </div>
+                            </div>
+                            <div>
+                                <img src="./images/info-devider.png" alt="">
+                            </div>
+                            <div class="text-center flex flex-col gap-2">
+                                <img src="./images/fare.png" alt="">
+                                <h3 class="font-bold text-2xl">550Tk</h3>
+                                <p>Per Seat</p>
+                            </div>
+                        </div>
+                       
+
+              </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
